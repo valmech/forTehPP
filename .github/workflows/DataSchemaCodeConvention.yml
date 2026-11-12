@@ -9,6 +9,6 @@ jobs:
       - name: Checkout Code in Repository
         uses: "actions/checkout@v3"
       - name: Start SQL Linter
-        run: |
-          pip install sqlfluff
-          sqlfluff lint $GITHUB_WORKSPACE/3-Software\ Construction/3.1-GitHubActions/DataSchema.sql --dialect oracle
+      run: |
+        pip install sqlfluff
+        sqlfluff lint $GITHUB_WORKSPACE/.github/workflows/DataSchema.sql --dialect oracle
