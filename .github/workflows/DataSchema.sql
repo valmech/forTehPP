@@ -1,1 +1,1 @@
-SELECT * FROM t1
+SELECT id, name FROM users;
